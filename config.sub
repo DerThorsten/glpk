@@ -1512,6 +1512,9 @@ case $os in
 		;;
 	-none)
 		;;
+	-emscripten)
+		os=-emscripten
+		;;
 	*)
 		# Get rid of the `-' at the beginning of $os.
 		os=`echo $os | sed 's/[^-]*-//'`
